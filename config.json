@@ -4,16 +4,32 @@
         {
             "name": "weatherData",
             "route": "/weatherData",
-            "content-type": "application/json",
-            "access-control-allow-origin": "*",
+            "headers": [
+                {
+                    "header":"Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "header":"Access-Control-Allow-Origin",
+                    "value": "*"
+                }
+            ],
             "response_file":"/home/pi/projects/weather/data.json"
         },
         {
             "name": "cryptoTraderLogs",
             "route": "/cryptoTraderLogs",
-            "content-type": "application/json",
-            "access-control-allow-origin": "*",
-            "response_file":"./config.json"
+            "headers": [
+                {
+                    "header":"Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "header":"Access-Control-Allow-Origin",
+                    "value": "*"
+                }
+            ],
+            "response_file":"/home/adam/Documents/projects/crypto_trader/logs/log.csv"
         }
     ]
 }
