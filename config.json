@@ -1,0 +1,19 @@
+{
+    "port": "3000",
+    "projects": [
+        {
+            "name": "weatherData",
+            "route": "/weatherData",
+            "content-type": "application/json",
+            "access-control-allow-origin": "*",
+            "response_file":"/home/pi/projects/weather/data.json"
+        },
+        {
+            "name": "cryptoTraderLogs",
+            "route": "/cryptoTraderLogs",
+            "content-type": "application/json",
+            "access-control-allow-origin": "*",
+            "response_file":"./config.json"
+        }
+    ]
+}
